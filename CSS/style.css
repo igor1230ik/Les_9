@@ -1,0 +1,212 @@
+/* ========================== Обнуляющий стиль ================================================== */
+@import "null.css";
+
+/* ========================= Шрифты ==================================== */
+
+/* ================================================================================== */
+
+body {
+    background: #ced4ca;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1920px;
+    margin: 20px auto 0;
+}
+.header {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    padding: 0 15px;
+}
+
+.header-content h1 {
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+.header-content h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000 0px 0px no-repeat;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.header-content p {
+    line-height: 1.3;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.image {
+    max-width: 225px;
+    min-height: 225px;
+    margin: 0 auto;
+}
+.image:hover {
+    box-shadow: 0 0 10px 10px rgba(223, 22, 22, 0.705);
+}
+.image:active {
+    max-width: 220px;
+}
+
+.image img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 1030px;
+    border: 1px solid #e6b30b;
+    margin: 200px auto 0;
+    padding: 0 15px;
+    box-shadow: 0 0 40px 20px rgb(230, 179, 11), inset 0 0 15px 2px rgb(62, 230, 11);
+}
+.game {
+    min-height: 2150px;
+    overflow: hidden;
+}
+
+/* =================== */
+.game-firstblock {
+    height: 50px;
+    border: 1px solid rgb(230, 179, 11);
+    margin-bottom: 50px;
+}
+.game-secondblock {
+    border: 1px solid #3ee60b;
+    height: 150px;
+    width: 50px;
+    margin: 0 0 0 auto;
+    visibility: hidden;
+}
+.game-thirdblock {
+    height: 50px;
+    border: 1px solid rgb(62, 230, 11);
+    width: 800px;
+    margin: 120px 0px 0 -750px;
+    visibility: hidden;
+}
+.game-fourthblock {
+    height: 200px;
+    width: 30px;
+    border: 1px solid rgb(62, 230, 11);
+    visibility: hidden;
+}
+.game-fifthblock {
+    height: 20px;
+    width: 800px;
+    margin: 180px 0 0 0;
+    border: 1px solid rgb(62, 230, 11);
+    visibility: hidden;
+}
+.game-sixthblock {
+    height: 300px;
+    width: 20px;
+    margin: 10px 0 0 400px;
+    border: 1px solid rgb(62, 230, 11);
+    visibility: hidden;
+}
+.game-seventhblock {
+    height: 12px;
+    border: 1px solid rgb(62, 230, 11);
+    width: 400px;
+    margin: 288px 0px 0 -386px;
+    visibility: hidden;
+}
+.game-eighthblock {
+    height: 300px;
+    width: 10px;
+    margin: 0px 0 0 0px;
+    border: 1px solid rgb(62, 230, 11);
+    visibility: hidden;
+}
+
+.game-image1 {
+    display: block;
+    width: 1000px;
+    border: 1px solid rgb(62, 230, 11);
+    margin: 290px 0 0 -220px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.game-image1 img {
+    display: inline-block;
+    max-width: 100%;
+    height: 100%;
+}
+.game-image2 {
+    display: block;
+    width: 1000px;
+    margin: -10px 0 0 -220px;
+    border: 1px solid rgb(55, 230, 11);
+    overflow: hidden;
+    visibility: hidden;
+}
+.game-image2 img {
+    max-width: 100%;
+}
+/* ================== */
+
+.game-firstblock:hover {
+    background-color: rgb(62, 230, 11);
+}
+.game-firstblock:hover .game-secondblock {
+    visibility: visible;
+}
+.game-secondblock:hover {
+    background-color: rgb(62, 230, 11);
+}
+.game-secondblock:hover .game-thirdblock {
+    visibility: visible;
+}
+.game-thirdblock:hover {
+    background-color: rgb(62, 230, 11);
+}
+.game-thirdblock:hover .game-fourthblock {
+    visibility: visible;
+}
+.game-fourthblock:hover {
+    background-color: rgb(62, 230, 11);
+}
+.game-fourthblock:hover .game-fifthblock {
+    visibility: visible;
+}
+.game-fifthblock:hover {
+    background-color: rgb(62, 230, 11);
+}
+.game-fifthblock:hover .game-sixthblock {
+    visibility: visible;
+}
+.game-sixthblock:hover {
+    background-color: rgb(62, 230, 11);
+}
+.game-sixthblock:hover .game-seventhblock {
+    visibility: visible;
+}
+.game-seventhblock:hover {
+    background-color: rgb(62, 230, 11);
+}
+.game-seventhblock:hover .game-eighthblock {
+    visibility: visible;
+}
+.game-eighthblock:hover {
+    background-color: rgb(62, 230, 11);
+}
+.game-eighthblock:hover .game-image1 {
+    visibility: visible;
+}
+.game-eighthblock:hover .game-image2 {
+    visibility: visible;
+}
